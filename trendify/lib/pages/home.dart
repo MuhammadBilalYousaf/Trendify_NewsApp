@@ -384,7 +384,7 @@ class _HomeState extends State<Home> {
                 label: 'Contact',
               ),
             ],
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
             selectedItemColor: Colors.blue,
             unselectedItemColor: Colors.grey,
             showSelectedLabels: true,

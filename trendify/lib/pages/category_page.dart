@@ -160,7 +160,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 label: 'Contact',
               ),
             ],
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
             selectedItemColor: Colors.blue,
             unselectedItemColor: Colors.grey,
             showSelectedLabels: true,

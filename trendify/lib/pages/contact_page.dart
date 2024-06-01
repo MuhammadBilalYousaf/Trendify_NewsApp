@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trendify/ads/banner_ad.dart';
 import 'package:trendify/models/category_model.dart';
 import 'package:trendify/pages/category_page.dart';
+import 'package:trendify/pages/home.dart';
 import 'package:trendify/services/data.dart';
 import 'package:trendify/services/news.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -105,7 +106,15 @@ fetchData() async {
               setState(() {
                 _currentIndex = index;
               });
-              if (index == 1) {
+              if (index == 0) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                ),
+              );
+            }
+              else if (index == 1) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -138,7 +147,7 @@ fetchData() async {
                 label: 'Contact',
               ),
             ],
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
             selectedItemColor: Colors.blue,
             unselectedItemColor: Colors.grey,
             showSelectedLabels: true,
